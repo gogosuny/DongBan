@@ -1,0 +1,229 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="galary/style0.css" />
+    <script src="galary/script0.js"></script>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <script src="gala/script1.js"></script>
+        <div class="galary_main">
+            <!-- 왼쪽 사이드바 -->
+            <div class="left-content"></div>
+            
+            <!-- 중앙 콘텐츠 영역 -->
+            <div class="center-content">
+                <div class="button-container">
+            		<!-- 로그인했을때 -->
+                    <input class="galary_button_top" type="button" value="사진등록" onclick="location.href='/addGalary'" />
+                    <!-- 로그인안했을때 -->
+                    
+                </div>
+                <h1>후기 갤러리</h1>
+                <br /><br />
+                <div class="galary_list">
+                	<!-- 로그인했을때 -->
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(17)">
+                            <img src="galary/image0.15_8090/downloadImg/17" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">대전 애견카페_마리몽</p>
+                        <p class="galary-user-id">admin</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(13)">
+                            <img src="galary/image1.15_8090/downloadImg/13" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">댕라운지</p>
+                        <p class="galary-user-id">user</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(12)">
+                            <img src="galary/image2.15_8090/downloadImg/12" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">갬성샷</p>
+                        <p class="galary-user-id">user</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(11)">
+                            <img src="galary/image3.15_8090/downloadImg/11" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">새송이</p>
+                        <p class="galary-user-id">user</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(10)">
+                            <img src="galary/image4.15_8090/downloadImg/10" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">친구 강아지</p>
+                        <p class="galary-user-id">user</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(9)">
+                            <img src="galary/image5.15_8090/downloadImg/9" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">입맛다시는 댕댕이</p>
+                        <p class="galary-user-id">admin</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(8)">
+                            <img src="galary/image6.15_8090/downloadImg/8" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">눈빛이 흔들리는 강아지</p>
+                        <p class="galary-user-id">admin</p>
+                    </div>
+                    <div class="galary_frame">
+                        <div onclick="openImagePopup(7)">
+                            <img src="galary/image7.15_8090/downloadImg/7" alt="Image" class="galary-image" />
+                        </div>
+                        <p class="galary-title">끌려가는 댕댕이</p>
+                        <p class="galary-user-id">admin</p>
+                    </div>
+                    <!-- 로그인안했을때 -->
+                    
+                </div>
+                <br />
+            </div>
+            
+            <!-- 오른쪽 사이드바 -->
+            <div class="right-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+
+<style>
+ 	/* 폰트 불러오기 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+    /* 폰트를 body 전체에 적용 */
+    body {
+        font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+    }
+    /* 전체 레이아웃 스타일 */
+    .galary_main {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        /* height: 70vh; */
+        min-height: 70vh; /* 고정 높이를 최소 높이로 변경 */
+    }
+
+    .left-content, .right-content {
+        width: 15%; /* 좌우 사이드바 넓이 */
+        padding: 20px;
+    }
+
+    .center-content {
+        width: 70%;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    /* 버튼 스타일 */
+    .button-container {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .galary_button_top {
+	    padding: 12px 20px; /* 버튼 크기 조정 (상하 여백 12px, 좌우 여백 20px) */
+	    font-size: 1.2em;
+        background-color: #FF7043;  /* 따뜻한 오렌지 색상 */
+        color: white;
+        border-radius: 10px;  /* 부드러운 라운드 처리 */
+        border: none;
+        cursor: pointer;
+    	transition: background-color 0.3s ease, transform 0.3s ease;  /* 부드러운 애니메이션 */
+    }
+
+    .galary_button_top:hover {
+        background-color: rgb(136, 181, 46);
+        transform: scale(1.05);  /* 버튼 크기 살짝 커지게 */
+    }
+
+    /* 갤러리 이미지와 관련된 스타일 */
+    .galary_list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 40px;
+        margin-top: 20px;
+        overflow-y: auto;  /* 스크롤이 생기게 하여 이미지가 추가될 때 화면을 넘어가지 않도록 */
+    }
+
+    .galary_frame {
+        background-color: #f5f5f5;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 기본 그림자 */
+    }
+
+    .galary_frame:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+	/* 이미지 스타일 */
+    .galary-image {
+        width: 100%;
+        height: 200px;  /* 고정된 높이 설정 */
+        object-fit: cover; /* 이미지를 비율에 맞게 크기 조정 */
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 이미지 경계에 그림자 효과 추가 */
+    }
+	/* 갤러리 제목 */
+    .galary-title {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+    }
+	/* 사용자 아이디 스타일 */
+    .galary-user-id {
+        font-size: 14px;
+        color: #888;
+        margin-top: 5px;
+    }
+</style>
+</body></html>

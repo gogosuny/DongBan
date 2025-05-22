@@ -1,0 +1,364 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="board1/style0.css" />
+    <script src="board1/script0.js"></script>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+                                
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <script src="board1/script1.js"></script>
+        <div class="board_main">
+            <!-- 왼쪽 사이드바 -->
+            <div class="left-content"></div>
+
+            <!-- 중앙 콘텐츠 영역 -->
+            <div class="center-content">
+            <div class="search-box-left">
+                <input type="button" class="search-box-btn" value="글쓰기" onclick="location.href='/writePost/1'" />
+            </div>
+                <h1>요청게시판</h1>
+                <br />
+                <form name="searchFrm" action="/board/1" method="post" onsubmit="return validateSearch()">
+                    <div class="search-container">
+	                    <div class="select-box">
+	                        <select name="recordSize" onchange="viewRecCnt(1)" class="input-field">
+	                            <option value="5" selected="selected">5개씩</option>
+	                            <option value="10">10개씩</option>
+	                            <option value="20">20개씩</option>
+	                            <option value="50">50개씩</option>
+	                            <option value="100">100개씩</option>
+	                        </select>
+	                    </div>
+
+                        <div class="search-elements-left">
+                            <select name="searchType" class="input-field">
+                                <option value="제목+내용">제목+내용</option>
+                                <option value="제목">제목</option>
+                                <option value="내용">내용</option>
+                            </select>
+                            <input type="text" name="keyword" class="input-field" value="" placeholder="검색어를 입력하세요." />
+                        </div>
+                        <div class="board_submit-btn-container">
+                            <button type="submit" class="board_submit-btn">검색</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <table class="board-table">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                            <th>좋아요</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>89</td>
+                            <td class="title">
+                                <a href="/readPost?post_no=89">요청드립니다.</a>
+                            </td>
+                            <td>user</td>
+                            <td>2025-03-21 14:12:27</td>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>87</td>
+                            <td class="title">
+                                <a href="/readPost?post_no=87">[ 요청 게시판 이용안내 ]</a>
+                            </td>
+                            <td>admin</td>
+                            <td>2025-03-21 11:15:11</td>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>85</td>
+                            <td class="title">
+                                <a href="/readPost?post_no=85">지도관련 요청</a>
+                            </td>
+                            <td>user_kang</td>
+                            <td>2025-03-21 11:12:44</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>84</td>
+                            <td class="title">
+                                <a href="/readPost?post_no=84">게시판 요청</a>
+                            </td>
+                            <td>user_kim</td>
+                            <td>2025-03-21 11:10:25</td>
+                            <td>2</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>83</td>
+                            <td class="title">
+                                <a href="/readPost?post_no=83">추가해주세요</a>
+                            </td>
+                            <td>user_kim2</td>
+                            <td>2025-03-21 11:08:59</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="pagination">
+                    <ul class="page">
+                        
+                        <li class="page_item">
+                            <a class="page_link_bold" href="/board/1/1?searchType=null&keyword=null&recordSize=5">1</a>
+                            
+                        </li>
+                        <li class="page_item">
+                            
+                            <a class="page_link" href="/board/1/2?searchType=null&keyword=null&recordSize=5">2</a>
+                        </li>
+                        <li class="page_item">
+                            
+                            <a class="page_link" href="/board/1/3?searchType=null&keyword=null&recordSize=5">3</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-content"></div>
+        </div>
+
+        <script>
+            function viewRecCnt() {
+                searchFrm.submit();
+            }
+
+            function validateSearch() {
+                var searchKeyword = document.querySelector('input[name="keyword"]').value;
+                if (searchKeyword.trim() === "") {
+                    alert("검색어를 입력해 주세요.");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+            body {
+                font-family: 'Noto Serif KR', serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f7fc;
+            }
+
+            .board_main {
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                height: auto;
+                background-color: #fafafa;
+            }
+
+            .left-content, .right-content {
+                width: 15%;
+                padding: 20px;
+            }
+
+            .center-content {
+                width: 70%;
+                padding: 30px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            .search-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .search-elements-left {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+            
+            .search-box-left {
+            	text-align: right;
+       			margin-bottom: 20px;
+            }
+            .search-box-btn {
+            	padding: 8px 20px; /* 버튼 크기 조정 (상하 여백 12px, 좌우 여백 20px) */
+			    font-size: 1.2em;
+		        background-color: #FF7043;  /* 따뜻한 오렌지 색상 */
+		        color: white;
+		        border-radius: 10px;  /* 부드러운 라운드 처리 */
+		        border: none;
+		        cursor: pointer;
+		    	transition: background-color 0.3s ease, transform 0.3s ease;  /* 부드러운 애니메이션 */
+            }
+
+            .input-field {
+                padding: 12px;
+                font-size: 1.1em;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                background-color: #f7f7f7;
+                width: 250px;
+                margin-right: 10px;
+            }
+
+            .board_submit-btn {
+                padding: 8px 20px;
+                font-size: 1.1em;
+                background-color: #FF7043;
+                color: white;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            .search-box-btn:hover, .board_submit-btn:hover {
+                background-color: rgb(136, 181, 46);
+                transform: scale(1.05);
+            }
+
+            .select-box {
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+            }
+
+            .board-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+
+            .board-table th, .board-table td {
+                padding: 15px;
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            .board-table th {
+                background-color: #FF7043;
+                color: white;
+                font-weight: bold;
+                border-radius: 8px;
+            }
+
+            .board-table td {
+                background-color: #f9f9f9;
+                border-radius: 8px;
+                color: #333;
+            }
+
+            .board-table tr:hover {
+                background-color: #f1f1f1;
+            }
+
+            .title a {
+                color: #ff6347;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .title a:hover {
+                color: #ff6347;
+                text-decoration: underline;
+            }
+
+            .pagination {
+                margin-top: 40px;
+            }
+
+            .page {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                padding: 0 5px;
+            }
+
+            .page_item {
+                margin: 0 5px;
+            }
+
+            .page_link, .page_link_bold {
+                padding: 8px 15px;
+                border-radius: 5px;
+                background-color: #eee;
+                color: #FF7043;
+                text-decoration: none;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .page_link:hover, .page_link_bold:hover {
+                background-color: #FF9E73;
+                color: white;
+            }
+
+            .page_link_bold {
+                background-color: #ddd;
+            }
+
+            .prev, .next {
+                display: inline-block;
+                margin: 0 10px;
+            }
+        </style>
+    </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body></html>

@@ -1,0 +1,262 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="regist/style0.css" />
+    <script src="regist/script0.js"></script>
+    <style>
+            /* 폰트 불러오기 */
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+        
+            /* 전체 레이아웃 스타일 */
+            body {
+                font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding: 20px;
+            }
+
+            .left-content, .right-content {
+                width: 15%; /* 좌우 사이드바 넓이 */
+            }
+
+            .login-content {
+                width: 100%;
+                max-width: 800px;  /* 너비 설정 */
+                padding: 40px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            /* 제목 스타일 */
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+                color: #333;
+                font-weight: 700;
+            }
+
+            /* 폼 스타일 */
+            .join {
+                width: 100%;
+                margin-bottom: 20px;
+                border-collapse: collapse;
+            }
+
+            .join th,
+            .join td {
+                padding: 15px;
+                text-align: left;
+                font-size: 1.2em;
+            }
+
+            .join th {
+                background-color: #f2f2f2;
+                color: #333;
+                border-radius: 5px;
+            }
+
+            .join td {
+                background-color: #fff;
+                border-radius: 5px;
+            }
+
+            .form-input {
+                width: 100%;
+                padding: 12px;
+                margin-top: 8px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                font-size: 1.1em;
+                background-color: #fafafa;
+            }
+
+            .form-input:focus {
+                outline: none;
+                border-color: #FF7043;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 12px;
+                margin-top: 8px;
+                border-radius: 5px;
+                border: 1px solid #ddd;
+                font-size: 1.1em;
+                background-color: #fafafa;
+                height: 150px;
+                resize: none;
+            }
+
+            /* 버튼 스타일 */
+            .button-container {
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            .submit-btn,
+            .reset-btn {
+                padding: 14px 30px;
+                margin: 8px;
+                font-size: 1.2em;
+                border-radius: 8px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            .submit-btn {
+                background-color: #FF7043;
+                color: white;
+            }
+
+            .submit-btn:hover {
+                background-color: #f96c4d;
+                transform: scale(1.05);
+            }
+
+            .reset-btn {
+                background-color: #ccc;
+                color: #333;
+            }
+
+            .reset-btn:hover {
+                background-color: #999;
+                transform: scale(1.05);
+            }
+
+            /* 중복확인 버튼 스타일 */
+            .idchk {
+                padding: 5px 15px;
+                font-size: 1.1em;
+                background-color: #FF7043;
+                color: white;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+                margin-top: 10px;
+            }
+
+            .idchk:hover {
+                background-color: rgb(136, 181, 46);
+            }
+
+            /* 중복확인 메시지 스타일 */
+            #msg {
+                color: red;
+                font-size: 1em;
+                margin-top: 10px;
+            }
+        </style>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+                
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+            <script src="regist/script1.js"></script>
+            <div class="main">
+                <div class="left-content"></div>
+                <div class="login-content">
+                    <h1>회원가입</h1>
+                    <form name="emplyFrm" action="regist" method="post">
+                        <table class="join">
+                            <tbody><tr>
+                                <th>아이디</th>
+                                <td>
+                                    <input type="text" name="employee_id" class="form-input" />
+                                    <input class="idchk" type="button" value="중복확인" onclick="chkId()" />
+                                    <div id="msg"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호</th>
+                                <td><input type="password" name="password" class="form-input" /></td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                                <td><input type="text" name="name" class="form-input" /></td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td><input type="text" name="telno" class="form-input" placeholder="' - ' 없이 입력" /></td>
+                            </tr>
+                            <tr>
+                                <th>성별</th>
+                                <td>
+                                    <input type="radio" name="gender" value="M" />남
+                                    <input type="radio" name="gender" value="F" />여
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td><input type="text" name="email" class="form-input" /></td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td><input type="text" name="address" class="form-input" /></td>
+                            </tr>
+                            <tr>
+                                <th>가입일자</th>
+                                <td><input type="text" name="hiredate" class="form-input" /></td>
+                            </tr>
+                        </tbody></table>
+
+                        <div class="button-container">
+                            <input type="button" value="가입하기" class="submit-btn" onclick="checkValue()" />
+                            <input type="reset" value="다시작성" class="reset-btn" />
+                        </div>
+                    </form>
+                </div>
+                <div class="right-content"></div>
+            </div>
+        </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body></html>

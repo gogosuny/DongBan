@@ -1,0 +1,229 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="index/style0.css" />
+    <script src="index/script0.js"></script>
+    <style>
+      /* 폰트 불러오기 */
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+      /* 폰트를 body 전체에 적용 */
+      body {
+        font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+      }
+
+      /* 다른 스타일들 */
+      /* 메인 섹션 스타일 */
+      .home_section {
+        text-align: center; /* 전체 콘텐츠를 가운데 정렬 */
+        padding: 40px;
+        animation: fadeIn 2s ease-out; /* 텍스트 애니메이션 추가 */
+        background-color: #f9f9f9;
+      }
+      /* fadeIn 애니메이션 정의 */
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px); /* 텍스트가 아래에서 올라오게 */
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0); /* 최종 위치로 */
+        }
+      }
+      
+      .home_section h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+      /* 검색 박스 */
+      .search-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        width: 100%; /* 전체 너비의 100%로 설정 */
+        margin-left: auto;
+        margin-right: auto; /* 화면 중앙에 배치 */
+      }
+      /* 입력란 스타일 */
+      .home-search-input {
+        padding: 16px;
+        font-size: 1.2em;
+        border-radius: 10px;
+        border: 1px solid #4A4A4A;
+        width: 400px; /* 입력란 길이 */
+        margin-bottom: 15px;  /* 입력란과 버튼 사이 여백 */
+        text-align: center;
+        background-color: #f9f9f9;
+      }
+      /* 버튼 스타일 */
+      .home-search-btn {
+        padding: 12px 20px; /* 버튼 크기 조정 (상하 여백 12px, 좌우 여백 20px) */
+        font-size: 1.2em;
+        background-color: #FF7043;  /* 따뜻한 오렌지 색상 */
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100px; /* 버튼의 가로 길이 고정 (100px) */
+      }
+
+      .home-search-btn:hover {
+        background-color: rgb(136, 181, 46); /* 버튼 호버 시 색상 */
+        transform: scale(1.05);  /* 버튼 크기 살짝 커지게 */
+      }
+
+      .info-text {
+        font-size: 1.6em;
+        color: #4A4A4A;  /* 진한 회색 */
+        line-height: 1.8;  /* 줄 간격 */
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+      }
+      .info-text span {
+        font-weight: bold;
+        color: #88b52e; /* 강조 색상 오렌지 */
+        font-size: 1.7em; /* 강조된 텍스트 크기 키우기 */
+      }
+      /* 줄바꿈된 텍스트에 대해 스타일 추가 */
+      .info-text br {
+        margin-bottom: 10px; /* 줄바꿈 간격 설정 */
+      }
+      /* 카드에 이미지를 스타일링 */
+      .features {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+        margin-top: 30px;
+      }
+      .feature-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 200px; /* 카드의 너비 설정 */
+      }
+
+      .feature-card img {
+        width: 200px; /* 이미지 크기 설정 */
+        height: 200px;
+        object-fit: cover; /* 이미지 크기를 비율에 맞게 조절 */
+        border-radius: 50%; /* 원형 이미지 */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+        margin-bottom: 15px; /* 이미지와 텍스트 사이 여백 */
+        opacity: 0;
+        transform: translateY(30px); /* 이미지가 아래에서 올라오는 느낌 */
+        animation: slideIn 1s forwards; /* 애니메이션 설정 */
+      }
+      @keyframes slideIn {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /* delay를 주어서 순차적으로 나타나게 할 수 있음 */
+      .feature-card:nth-child(1) img {
+        animation-delay: 0.3s;
+      }
+      .feature-card:nth-child(2) img {
+        animation-delay: 0.6s;
+      }
+      .feature-card:nth-child(3) img {
+        animation-delay: 0.9s;
+      }
+
+      .feature-card p {
+        font-size: 1.2em;
+        color: #333;
+        margin-top: 10px;
+      }
+    </style>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+      <section class="home_section">
+        <br />
+        <h1>반려견과 떠나는 여행. 함께할 <span>장소</span>를 찾아보세요!</h1>
+        <br /><br />
+        
+        <!-- 검색 박스와 버튼 -->
+        <div class="search-container">
+          <a href="map.html" style="text-decoration: none; color: inherit;">
+            <input class="home-search-input" type="text" placeholder="Search for a place" />
+            <button class="home-search-btn">검색</button>
+          </a>
+        </div>
+
+        <!-- 추천 장소 안내 텍스트 -->
+        <p class="info-text">여기, 저희 <span>동반견(肩)</span> 에서<br />반려견과 함께 추억할 장소를 찾아보세요.<br />즐거운 시간을 위해 다양한 정보가 기다리고 있습니다.</p>
+      </section>
+
+      <!-- 이미지 -->
+      <section class="home_section">
+        <h2>Places to Create Memories Together..</h2>
+        <div class="features">
+          <div class="feature-card">
+            <img src="index/image0.jpg" alt="여행&관광" />
+            <p>여행&관광</p>
+          </div>
+          <div class="feature-card">
+            <img src="index/image1.jpg" alt="음식점" />
+            <p>음식점</p>
+          </div>
+          <div class="feature-card">
+            <img src="index/image2.jpg" alt="카페" />
+            <p>카페</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body></html>

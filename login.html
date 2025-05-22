@@ -1,0 +1,177 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="login/style0.css" />
+    <script src="login/script0.js"></script>
+    <style>
+        /* 폰트 불러오기 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+        
+        /* 기본적인 폰트 설정 */
+        body {
+            font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        /* 전체 로그인 레이아웃 */
+        .login_main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .left-content, .right-content {
+            width: 15%; /* 좌우 사이드바 넓이 */
+        }
+
+        /* 로그인 콘텐츠 */
+        .login-content {
+            width: 100%;
+            max-width: 400px;  /* 너비 설정 */
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* 제목 스타일 */
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* 폼 입력 스타일 */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            margin-bottom: 20px; /* 입력창 사이 간격 설정 */
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1.1em;
+            background-color: #fafafa;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #999;
+        }
+
+        /* 에러 메시지 스타일 */
+        .errMsg {
+            color: #e74c3c;
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        /* 버튼 스타일 */
+        input[type="submit"] {
+            padding: 14px 30px;
+            margin-top: 10px;
+            font-size: 1.2em;
+            border-radius: 6px;
+            border: none;
+            background-color: #FF7043;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f96c4d;
+            transform: scale(1.05);
+        }
+
+        /* 비밀번호 찾기 링크 스타일 */
+        a {
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+            color: #555;
+            margin-top: 20px;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        </style>
+</head>
+
+<body>
+<header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                <li><a href="member.html">로그인</a></li>
+                <li><a href="regist.html">회원관리</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+                
+                
+                
+                
+                
+                
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+            <div class="login_main">
+                <div class="left-content"></div>
+                <div class="login-content">
+                    <h1>로그인</h1>
+                    <form name="frmLogin" action="login" method="post" enctype="UTF-8">
+                        <input type="text" name="username" placeholder="아이디를 입력해주세요" required="" />
+                        <input type="password" name="password" placeholder="비밀번호를 입력해주세요" required="" />
+                        <input type="submit" value="로그인" />
+                        
+                    </form>
+                    <a href="findpw">비밀번호를 잊으셨나요?</a>
+                </div>
+                <div class="right-content"></div>
+            </div>
+        </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body></html>

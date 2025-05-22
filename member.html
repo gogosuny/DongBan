@@ -1,0 +1,295 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="member/style0.css" />
+    <script src="member/script0.js"></script>
+    <style>
+	    /* 폰트 불러오기 */
+	    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+        /* 전반적인 레이아웃 스타일 */
+        body {
+        	font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+            background-color: #f4f7fa;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            height: 70vh;
+        }
+
+        .left-content, .right-content {
+            width: 15%; /* 좌우 사이드바 너비 */
+            padding: 20px;
+        }
+
+        .login-content {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 20px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        table th {
+            background-color: #FF7043;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        table td {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            color: #333;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .edit a {
+            padding: 8px 20px;
+            border-radius: 5px;
+            background-color: #eee;
+            margin: 0px;
+            font-weight: bold;
+            color: #FF7043;
+            text-decoration: none;
+        }
+
+        .edit a:hover {
+            background-color: #FF7043;
+            color: white;
+        }
+
+        a {
+            color: #FF7043;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        a:hover {
+            color: #f96c4d;
+            text-decoration: underline;
+        }
+
+        .edit a, .del a, .sav {
+            padding: 8px 15px;
+            border-radius: 5px;
+            background-color: #eee;
+            margin: 0px;
+        }
+
+        .edit a:hover {
+            background-color: #FF7043;
+            color: white;
+        }
+
+        .del a:hover {
+            background-color: #ff6347;
+            color: white;
+        }
+
+        .left-content, .right-content {
+            padding: 20px;
+            background-color: #f4f7fa;
+        }
+
+        tr:hover {
+            background-color: #f2f2f2;
+        }
+
+        /* 반응형 처리 */
+        @media (max-width: 768px) {
+            .main {
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .login-content {
+                width: 100%;
+            }
+
+            .left-content, .right-content {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+        /* 버튼들을 가로로 배치 */
+        .button-container {
+            display: flex;
+            justify-content: center; /* 버튼들이 가운데 정렬되도록 설정 */
+            margin-top: 20px;
+        }
+
+        .button-container .edit, .button-container .del, .button-container .sav {
+            margin: 0 10px; /* 버튼 사이에 간격을 주기 위해 margin 설정 */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <script src="member/script1.js"></script>
+        <script src="member/script2.js"></script>
+        <div class="main">
+            <div class="left-content"></div>
+            <div class="login-content">
+                <h1>회원관리</h1>
+                <br />
+                <form name="frmInfo" action="editEmply">
+                    <table>
+                        <tbody><tr>
+                            <th>아이디</th>
+                            <th>이름</th>
+                            <th>주소</th>
+                            <th>전화번호</th>
+                            <th>이메일</th>
+                            <th class="width9p">수정</th>
+                            <th class="width9p">삭제</th>
+                        </tr>
+                        <tr id="line0">
+                            <td class="id">admin</td>
+                            <td class="name">관리자</td>
+                            <td class="address">대전시 서구 둔산동</td>
+                            <td class="telno">01000000000</td>
+                            <td class="email">admin@KoreaIt.com</td>
+                            <td class="edit">
+                                <a style="font-weight: bold;" onclick="editEmply(0)">[수정]</a>
+                            </td>
+                            <td class="del">
+                                <a style="font-weight: bold;" href="/fire?id=admin">[삭제]</a>
+                            </td>
+                        </tr>
+                        <tr id="line1">
+                            <td class="id">user_kang</td>
+                            <td class="name">강태구</td>
+                            <td class="address">대전시 서구 둔산동</td>
+                            <td class="telno">01011111111</td>
+                            <td class="email">user@KoreaIt.com</td>
+                            <td class="edit">
+                                <a style="font-weight: bold;" onclick="editEmply(1)">[수정]</a>
+                            </td>
+                            <td class="del">
+                                <a style="font-weight: bold;" href="/fire?id=user_kang">[삭제]</a>
+                            </td>
+                        </tr>
+                        <tr id="line2">
+                            <td class="id">user_kim</td>
+                            <td class="name">김영준이</td>
+                            <td class="address">대전시 서구 둔산동</td>
+                            <td class="telno">01033333333</td>
+                            <td class="email">kim@KoreaIt.com</td>
+                            <td class="edit">
+                                <a style="font-weight: bold;" onclick="editEmply(2)">[수정]</a>
+                            </td>
+                            <td class="del">
+                                <a style="font-weight: bold;" href="/fire?id=user_kim">[삭제]</a>
+                            </td>
+                        </tr>
+                        <tr id="line3">
+                            <td class="id">user_kim2</td>
+                            <td class="name">김진훈</td>
+                            <td class="address">대전시 서구 둔산동</td>
+                            <td class="telno">01044444444</td>
+                            <td class="email">userkim@KoreaIt.com</td>
+                            <td class="edit">
+                                <a style="font-weight: bold;" onclick="editEmply(3)">[수정]</a>
+                            </td>
+                            <td class="del">
+                                <a style="font-weight: bold;" href="/fire?id=user_kim2">[삭제]</a>
+                            </td>
+                        </tr>
+                        <tr id="line4">
+                            <td class="id">user_kim3</td>
+                            <td class="name">김태민</td>
+                            <td class="address">대전시 서구 둔산동</td>
+                            <td class="telno">01055555555</td>
+                            <td class="email">kim2@KoreaIt.com</td>
+                            <td class="edit">
+                                <a style="font-weight: bold;" onclick="editEmply(4)">[수정]</a>
+                            </td>
+                            <td class="del">
+                                <a style="font-weight: bold;" href="/fire?id=user_kim3">[삭제]</a>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </form>
+            </div>
+
+            <div class="right-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+</body></html>
