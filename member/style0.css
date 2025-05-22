@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+
+
+/* header, footer 스타일 */
+header, footer {
+    background-color: orange; /* header와 footer 배경색 */
+    margin: 0 auto; /* 가운데 정렬 */
+    width: 100%; /* 부모 요소의 너비를 100% 차지하도록 설정 */
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+header {
+    color: black;
+    display: flex;
+    justify-content: space-between; /* 왼쪽과 오른쪽으로 공간 분배 */
+    align-items: center; /* 콘텐츠를 수직으로 중앙 정렬 */
+    padding: 18px 100px; /* 양 옆에 여백 추가 */
+    box-sizing: border-box;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px;
+    position: relative;
+}
+
+/* 메뉴 스타일 */
+#menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end; /* 메뉴 항목을 오른쪽에 정렬 */
+    white-space: nowrap; /* 메뉴 항목에서 줄바꿈 방지 */
+}
+
+#menu li {
+    list-style: none;
+    margin-left: 20px; /* 메뉴 항목 간의 간격 */
+}
+
+li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1.3em;
+    white-space: nowrap; /* 텍스트에서 줄바꿈 방지 */
+}
+
+li a:hover {
+    font-weight: bolder;
+    color: rgb(136, 181, 46);
+}
+
+.width9p{
+	width: 9%;
+}
