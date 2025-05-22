@@ -1,0 +1,260 @@
+<!--  This landing page has been captured by Landing Page Ripper Chrome extension developed by thelanders.club. If you want to get this lander cleaned, visit thelanders.club -->
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    
+    <title>Dong_Ban</title>
+    <link rel="stylesheet" type="text/css" href="writePost3/style0.css" />
+    <script src="writePost3/script0.js"></script>
+</head>
+
+<body>
+    <header> 
+    	<a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1>동반견(肩)</h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="map.html">통합검색</a></li>
+                <li><a href="galary.html">후기갤러리</a></li>
+                <li><a href="board1.html">요청게시판</a></li>
+                <li><a href="board2.html">방명록</a></li>
+                <li><a href="board3.html">공지사항</a></li>
+                
+                <li></li>
+                <!-- <li><a href="/sendMail">메일전송</a></li> -->
+                <li>
+                    <a href="index.html">로그아웃	
+                    <span>(admin)</span>
+                    </a>
+                </li> 
+                <!-- 유저 -->
+
+                <!-- 관리자 -->
+                <li><a href="member.html">회원관리</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div>
+        <script src="writePost3/script1.js"></script>
+        <div class="main">
+            <!-- 왼쪽 사이드바 -->
+            <div class="left-content"></div>
+
+            <!-- 로그인 및 게시물 작성 영역 -->
+            <div class="login-content">
+                <h1>공지사항</h1>
+                <br />
+                <form name="writePost" action="/writePost" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="board_no" value="3" />
+                    <div class="form-container">
+                        <table class="post-table">
+                            <tbody><tr>
+                                <th>제목</th>
+                                <td><input name="title" class="form-input" placeholder="제목을 입력하세요." /></td>
+                            </tr>
+                            <tr>
+                                <th>내용</th>
+                                <td><textarea name="content" class="form-input" placeholder="내용을 입력하세요."></textarea></td>
+                            </tr>
+                            <tr>
+                                <th>첨부파일</th>
+                                <td><input type="button" value="파일추가" class="file-btn" onclick="addFile(this)" /></td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+
+                    <br />
+                    <div class="button-container">
+                        <input type="button" value="저장" class="submit_btn" onclick="location='#'" />
+                        <input type="reset" value="다시작성" class="reset_btn" onclick="location='#'" />
+                    </div>
+
+                    	<input type="button" value="목록" class="back-btn" onclick="location.href='board3.html'" />
+                </form>
+                <br />
+            </div>
+
+            <!-- 오른쪽 사이드바 -->
+            <div class="right-content"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>HRDKOREA Copyright@2016 All rights reserve. Human Resources Development Service of Korea</p>
+    </footer>
+
+
+
+
+<style>
+	/* 폰트 불러오기 */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+
+    /* 폰트를 body 전체에 적용 */
+    body {
+        font-family: 'Noto Serif KR', serif;  /* Noto Serif KR 폰트 적용 */
+    }
+    /* 전체 레이아웃 스타일 */
+    .main {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        background-color: #f9f9f9;
+    }
+
+    .left-content, .right-content {
+        width: 15%; /* 좌우 사이드바 넓이 */
+        padding: 20px;
+    }
+
+    .login-content {
+        width: 70%;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #333;
+        font-weight: 700;
+    }
+
+    /* 폼 스타일 */
+    .form-container {
+        width: 100%;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .post-table {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+    }
+
+    .post-table th,
+    .post-table td {
+        padding: 12px;
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    .post-table th {
+        background-color: #f2f2f2;
+        color: #333;
+        border-radius: 5px;
+    }
+
+    .post-table td {
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 1.2em;
+        background-color: #f9f9f9;
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px;
+        margin-top: 8px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 1.2em;
+        background-color: #f9f9f9;
+        height: 200px;  /* 고정된 높이 */
+        resize: none;   /* 사용자가 크기 조정할 수 없게 설정 */
+    }
+
+    .form-input:focus {
+        outline: none;
+        border-color: #FF7043;
+    }
+
+    /* 버튼 스타일 */
+    .button-container {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .submit_btn,
+    .reset_btn {
+        padding: 12px 30px;
+        margin: 5px;
+        font-size: 1.2em;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .submit_btn {
+        background-color: #FF7043;
+        color: white;
+    }
+
+    .submit_btn:hover {
+        background-color: #f96c4d;
+        transform: scale(1.05);
+    }
+
+    .reset_btn {
+        background-color: #ccc;
+        color: #333;
+    }
+
+    .reset_btn:hover {
+        background-color: #999;
+        transform: scale(1.05);
+    }
+
+    /* 파일 추가 버튼 */
+    .file-btn {
+        padding: 12px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .file-btn:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+
+    /* 갤러리 목록으로 돌아가는 버튼 */
+    .back-btn {
+        padding: 12px 105px;
+        background-color: #FF7043;
+        color: white;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        margin-top: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-btn:hover {
+        background-color: rgb(136, 181, 46);
+        transform: scale(1.05);
+    }
+</style>
+</body></html>

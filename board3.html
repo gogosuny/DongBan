@@ -45,14 +45,14 @@
             <!-- 중앙 콘텐츠 영역 -->
             <div class="center-content">
             <div class="search-box-left">
-                <input type="button" class="search-box-btn" value="글쓰기" onclick="location.href='/writePost/3'" />
+                <input type="button" class="search-box-btn" value="글쓰기" onclick="location.href='writePost3.html'" />
             </div>
                 <h1>공지사항</h1>
                 <br />
                 <form name="searchFrm" action="/board/3" method="post" onsubmit="return validateSearch()">
                     <div class="search-container">
 	                    <div class="select-box">
-	                        <select name="recordSize" onchange="viewRecCnt(3)" class="input-field">
+	                        <select name="recordSize" onchange="location='#'" class="input-field">
 	                            <option value="5" selected="selected">5개씩</option>
 	                            <option value="10">10개씩</option>
 	                            <option value="20">20개씩</option>
@@ -91,7 +91,7 @@
                         <tr>
                             <td>55</td>
                             <td class="title">
-                                <a href="/readPost?post_no=55">[ 공시사항 ] - 필독</a>
+                                <a href="readPost.html">[ 공시사항 ] - 필독</a>
                             </td>
                             <td>admin</td>
                             <td>2025-03-12 17:23:37</td>
@@ -105,7 +105,7 @@
                     <ul class="page">
                         
                         <li class="page_item">
-                            <a class="page_link_bold" href="/board/3/1?searchType=null&keyword=null&recordSize=5">1</a>
+                            <a class="page_link_bold" href="location='#'">1</a>
                             
                         </li>
                         
